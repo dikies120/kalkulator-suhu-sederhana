@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
-<<<<<<< HEAD
-  const MyHomePage({super.key, this.title = "Temperature Converter"});
-=======
   const MyHomePage({super.key, required this.title});
->>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
 
   final String title;
 
@@ -100,10 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const SizedBox(height: 20),
-<<<<<<< HEAD
-=======
 
->>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -125,10 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             const SizedBox(height: 10),
-<<<<<<< HEAD
-=======
 
->>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -150,16 +140,14 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             const SizedBox(height: 20),
-<<<<<<< HEAD
-=======
 
->>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
             GridView.builder(
               shrinkWrap: true,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
                 childAspectRatio: 2,
-<<<<<<< HEAD
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
               ),
               itemCount: 12,
               itemBuilder: (context, index) {
@@ -190,47 +178,13 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             const SizedBox(height: 20),
-=======
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
-              ),
-              itemCount: 12,
-              itemBuilder: (context, index) {
-                if (index == 9) {
-                  return ElevatedButton(
-                    onPressed: _onReset,
-                    child: const Text("C", style: TextStyle(fontSize: 20, color: Colors.red)),
-                  );
-                } else if (index == 10) {
-                  return ElevatedButton(
-                    onPressed: () => _onNumberPressed("0"),
-                    child: const Text("0", style: TextStyle(fontSize: 20)),
-                  );
-                } else if (index == 11) {
-                  return ElevatedButton(
-                    onPressed: _onDelete,
-                    child: const Icon(Icons.backspace, color: Colors.red),
-                  );
-                } else {
-                  return ElevatedButton(
-                    onPressed: () => _onNumberPressed("${index + 1}"),
-                    child: Text("${index + 1}", style: const TextStyle(fontSize: 20)),
-                  );
-                }
-              },
-            ),
-            const SizedBox(height: 20),
 
->>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
             ElevatedButton(
               onPressed: _convert,
               child: const Text("Konversi", style: TextStyle(fontSize: 18)),
             ),
             const SizedBox(height: 20),
-<<<<<<< HEAD
-=======
 
->>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
             Text(
               _result,
               style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -240,8 +194,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
