@@ -138,6 +138,41 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             const SizedBox(height: 20),
+            GridView.builder(
+              shrinkWrap: true,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                childAspectRatio: 2,
+              ),
+              itemCount: 12,
+              itemBuilder: (context, index) {
+                List<String> buttons = [
+                  "1", "2", "3",
+                  "4", "5", "6",
+                  "7", "8", "9",
+                  "C", "0", "←"
+                ];
+                return Padding(
+                  padding: const EdgeInsets.all(5),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      if (buttons[index] == "C") {
+                        _onReset();
+                      } else if (buttons[index] == "←") {
+                        _onDelete();
+                      } else {
+                        _onNumberPressed(buttons[index]);
+                      }
+                    },
+                    child: Text(
+                      buttons[index],
+                      style: const TextStyle(fontSize: 20),
+                    ),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: _convert,
               child: const Text("Konversi", style: TextStyle(fontSize: 18)),
