@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
+import 'package:git_baru/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'kalkulator',
+      title: 'Flutter Login',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 0, 255, 242)),
+        primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'kalkulator suhu'),
+      home: const MyLoginPage(),
     );
   }
 }
