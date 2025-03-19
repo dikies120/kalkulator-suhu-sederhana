@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # kalkulator-suhu-sederhana
 tugas membuat kalkulator suhu
 =======
+=======
+>>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
 # git_baru
 
 A new Flutter project.
@@ -18,4 +21,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+<<<<<<< HEAD
 >>>>>>> 1f48323 (inisialisasi proyek)
+=======
+>>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
