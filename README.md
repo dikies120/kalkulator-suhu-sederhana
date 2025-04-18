@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 # kalkulator-suhu-sederhana
 tugas membuat kalkulator suhu
+Mengubah ke provider
 =======
 =======
 >>>>>>> 1f483239688a4fbd0cd86301f6d1f6f4bf8b08f3
