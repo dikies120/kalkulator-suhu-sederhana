@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:git_baru/home_page.dart'; 
+import 'package:git_baru/home_page.dart';
 
 class MyLoginPage extends StatefulWidget {
   const MyLoginPage({super.key});
@@ -21,10 +21,13 @@ class _MyLoginPageState extends State<MyLoginPage> {
       setState(() {
         notif = "";
       });
-      // Navigasi ke halaman Home dengan memberikan title
+
+      // ✅ Navigasi ke halaman home
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const MyHomePage(title: "Temperature Converter")),
+        MaterialPageRoute(
+          builder: (context) => const MyHomePage(title: "Temperature Converter"),
+        ),
       );
     } else {
       setState(() {
